@@ -1,0 +1,135 @@
+.loginContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #acc8e7;
+}
+
+.loginTitle{
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 4px;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.4rem;
+    font-size: 1.4rem;
+    padding: 15px;
+    color: #000;
+    text-align: center;
+}
+.loginTitle span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.loginSocials{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #4b8bb3;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    margin-bottom: 10px;
+}
+
+.loginSocials span{
+    font-size: 1.2rem;
+    padding: 2px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.socialBtn{
+    padding: 8px 30px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px 3px #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.socialBtn:hover{
+    box-shadow: 1px 1px 4px 3px #000;
+    transition: 0.2s;
+}
+
+.notRegBtn{
+    color: #000;
+}
+
+.google{
+    background-color: #de5246;
+}
+
+.facebook{
+    background-color: #3b5998;
+}
+
+.twitter{
+    background-color: #00aceb;
+}
+
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm input{
+    outline: none;
+    padding: 8px;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(240, 235, 235);
+}
+
+.loginBtn{
+    border: none;
+    padding: 8px;
+    width: 50%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Roboto' sans-serif;
+    font-size: 1rem;
+    /* font-weight: bold; */
+}
+
+.loginBtn:hover{
+    background-color: #999;
+    color: #000;
+    transition: .3s;
+}
+
+.loginFormContainer{
+    padding: 20px;
+    background-color: #fff;
+    margin: 15px auto;
+    width: 30%
+}
+
+
+@media screen and ( max-width: 768px) {
+    .loginFormContainer{
+        width: 90%;
+       
+    }
+
+    .loginSocials{
+        width:90%;
+    }
+}

@@ -16,15 +16,10 @@ const Navbar = () => {
             <h1>Argumental</h1>
           </div>
           <li>
-            <input type="search" placeholder="Search..." />
+            <input type="search" placeholder="Search...🔍" />
           </li>
           <li>
-            <Link to="/">
-              <BiHome style={{ marginRight: 2 }} /> Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/">
+            <Link to="/home">
               <BiHome style={{ marginRight: 2 }} /> Home
             </Link>
           </li>
@@ -52,12 +47,18 @@ const Navbar = () => {
               Favourites
             </Link>
           </li>
-          {/* <div className={classes.navProfile}>
-            <h1>Robbie Brennan</h1>
-            <p>Location</p>
-            <p>Image</p>
-          </div> */}
+          <div className={classes.navProfile}>
+            <span>Robbie Brennan</span>
+            <br />
+            <span>Location</span>
+            <br />
+            <span>Image</span>
+          </div>
         </ul>
+      </div>
+      <div className={classes.mobileNavTitle}>
+        <FaAngry />
+        <h1>Argumental</h1>
       </div>
       <div className={classes.mobileNav}>
         <ul className={classes.mobileNavLinks}>
@@ -67,7 +68,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="post">
+            <Link to="/post">
               <IoIosCreate style={{ color: "#769FCD", fontSize: 20 }} />
             </Link>
           </li>

@@ -51,6 +51,16 @@
     margin-bottom: 20px;
 }
 
+.navLinks li input{
+    padding: 4px 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
 .navLinks li a{
     text-decoration: none;
     font-size: 1.1rem;
@@ -63,7 +73,7 @@
     padding: 2px 20px;
     border-radius: 12px;
     background-color: #4b8bb3;
-    margin-top: 90px;
+    margin-top: 80px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #B9D7EA;
@@ -77,6 +87,22 @@
 
 
 /* Mobile navbar styling */
+
+.mobileNavTitle{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    letter-spacing: .4rem;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    background-color: #fff;
+    display: none;
+}
+
+
+
 
 .mobileNav {
     position: fixed;
@@ -109,6 +135,8 @@
     list-style: none;
 }
 
+
+.mobileNavTitle:hover,
 .navTitle:hover{
     background-color: #000;
     color: #fff;
@@ -129,5 +157,8 @@
     }
     .navLinks{
         display: none;
+    }
+    .mobileNavTitle{
+        display: block;
     }
 }
