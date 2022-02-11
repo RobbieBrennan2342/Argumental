@@ -1,0 +1,133 @@
+.nav{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #4b8bb3;
+    height: 100%;
+    background-color: #769FCD;
+    display: inline-block;
+    position: fixed;
+    
+}
+
+
+
+.navTitle{
+    border-radius: 4px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 8px;
+    background-color: #fff;
+    font-family: 'Bangers', cursive;
+    letter-spacing: .4rem;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    background-color: #fff;
+    
+}
+
+
+.navLinks{
+    border-right: 1px solid #171a1b;
+    padding-top: 40px;
+    width:20vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:stretch;
+    align-items: center;
+    height: 100vh;
+    background-color: #B9D7EA;
+    border-bottom: 1px solid rgb(207, 201, 201);
+    position: fixed;
+    
+    
+}
+
+.navLinks li{
+    list-style: none;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 5px 8px;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    margin-bottom: 20px;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #769FCD;
+}
+
+.navProfile{
+    padding: 2px 20px;
+    border-radius: 12px;
+    background-color: #4b8bb3;
+    margin-top: 90px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #B9D7EA;
+}
+
+
+
+
+
+
+
+
+/* Mobile navbar styling */
+
+.mobileNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    display: none;
+}
+
+.mobileNavLinks{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100vw;
+    background-color: #B9D7EA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;;
+}
+
+.mobileNavLinks li{
+    margin-top: 4px;
+    color: #769FCD;
+    font-size: 1.1rem;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;;
+    margin-bottom: 4px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 4px;
+    list-style: none;
+}
+
+.navTitle:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.4s;
+}
+
+
+.mobileNavLinks li:hover,
+.navLinks li:hover {
+    background-color: #000;
+    transition: 0.4s;
+    
+}
+
+@media screen and (max-width: 1027px) {
+    .mobileNav{
+        display: block;
+    }
+    .navLinks{
+        display: none;
+    }
+}
