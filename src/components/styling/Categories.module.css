@@ -1,3 +1,30 @@
+.catsContainer{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-left: 10%;
+    margin-left:14%;
+}
+
+
+.catsCard{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.catsTitle{
+    width: 100%;
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+
 .catsLogo{
     display: flex;
     flex-direction: column;
@@ -11,23 +38,36 @@
 }
 
 
+.catsImg{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.catsImg img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
 .catsName{
     font-weight: bold;
-    margin: 15px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
 
 
 .catsItem{
-    width: 15%;
+    width: 180px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    margin: 10px 40px;
+    margin: 5px 20px;
     background-color: #fff; 
-    padding: 18px;
+    padding: 14px;
     box-shadow: 1px 1px 4px 3px #4b8bb3;
     border-radius: 6px;
+    /* margin-left: 40%; */
 }
 
 
@@ -42,7 +82,7 @@
 
 .catsInterItem{
     margin: 4px;
-    padding: 5px 5px;
+    padding: 2px 2px;
     text-align: center;
     border-radius: 13px;
     
@@ -50,13 +90,13 @@
 
 
 .catsIcon{
-    position: relative;
+   
     text-align: center;
     background-color: #fff;
     padding: 6px;
     color: #000;
     border-radius: 50px;
-    z-index: 10;
+    
     
 }
 

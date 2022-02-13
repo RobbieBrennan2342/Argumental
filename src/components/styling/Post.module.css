@@ -65,7 +65,7 @@
 }
 
 .form input[type='file'] {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 
@@ -80,7 +80,15 @@
     font-size: 1.1rem;
     font-weight: bold;
     box-shadow: 1px 1px 4px 3px #4b8bb3;
+    margin-top: 10px;
 
+}
+
+.catSelect{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 1.1rem;
 }
 
 .postBtn:hover{

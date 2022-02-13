@@ -5,19 +5,23 @@ import classes from "../styling/Post.module.css";
 const Post = (props) => {
   const [postTitle, setPostTitle] = useState("");
   const [postBody, setPostBody] = useState("");
+  const [category, setCategory] = useState("");
 
   const bodyRef = useRef();
   const titleRef = useRef();
+  const categoryRef = useRef();
 
   const inputChangeHandler = () => {
     setPostTitle(titleRef.current.value);
     setPostBody(bodyRef.current.value);
+    setCategory(categoryRef.current.value);
   };
 
   const postSubmitHandler = (e) => {
     e.preventDefault();
     console.log(postTitle);
     console.log(postBody);
+    console.log(category);
   };
 
   return (
@@ -46,6 +50,21 @@ const Post = (props) => {
             placeholder="Start your argument here!!"
           />
           <input type="file" name="ImageStyle" />
+          <label htmlFor="category">Category</label>
+          <select
+            ref={categoryRef}
+            onChange={inputChangeHandler}
+            className={classes.catSelect}
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
           <button className={classes.postBtn} type="submit">
             Submit <FaRegLaughWink />
           </button>

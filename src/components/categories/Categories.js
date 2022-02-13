@@ -1,5 +1,6 @@
 import React from "react";
 import CategoryItem from "./CategoryItem";
+import Advert from "../adverts/Advert";
 import classes from "../styling/Categories.module.css";
 const Categories = (props) => {
   return (
@@ -9,7 +10,15 @@ const Categories = (props) => {
           <span>Categories</span>
         </div>
         <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
+        <CategoryItem />
       </div>
+      <Advert />
     </div>
   );
 };

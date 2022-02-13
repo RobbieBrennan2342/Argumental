@@ -19,27 +19,28 @@ function App() {
   };
 
   return (
-    <Categories />
-    // <Router>
-    //   <Card>
-    //     {auth ? <Navbar /> : <Login onAuth={handleAuth} />}
-    //     <Routes>
-    //       <Route path={!auth ? "/login" : "/"} exact element={<Home />}></Route>
-    //     </Routes>
-    //     <Routes>
-    //       <Route path="/post" exact element={<Post />}></Route>
-    //     </Routes>
-    //     <Routes>
-    //       <Route path="/categories" rxact element={<Categories />}></Route>
-    //     </Routes>
-    //     <Routes>
-    //       <Route path="/profile" exact element={<Profile />}></Route>
-    //     </Routes>
-    //     <Routes>
-    //       <Route path="/favourites" exact element={<Favourites />}></Route>
-    //     </Routes>
-    //   </Card>
-    // </Router>
+    // <Categories />
+    <Router>
+      <Card>
+        {auth ? <Navbar /> : <Login onAuth={handleAuth} />}
+        <Routes>
+          <Route path={!auth ? "/login" : "/"} exact element={<Home />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/post" exact element={<Post />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/categories" rxact element={<Categories />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/profile" exact element={<Profile />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/favourites" exact element={<Favourites />}></Route>
+        </Routes>
+      </Card>
+      <Advert />
+    </Router>
   );
 }
 
