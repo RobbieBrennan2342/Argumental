@@ -1,0 +1,71 @@
+.catsLogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Bangers', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.catsName{
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: center;
+}
+
+
+
+.catsItem{
+    width: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin: 10px 40px;
+    background-color: #fff; 
+    padding: 18px;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    border-radius: 6px;
+}
+
+
+.catsInter{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 6px;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    padding: 3px 16px;
+    background-color: #000;
+}
+
+.catsInterItem{
+    margin: 4px;
+    padding: 5px 5px;
+    text-align: center;
+    border-radius: 13px;
+    
+}
+
+
+.catsIcon{
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 6px;
+    color: #000;
+    border-radius: 50px;
+    z-index: 10;
+    
+}
+
+.catsIcon:hover{
+    background-color: #4b8bb3;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.catsTotal{
+    color: #fff;
+}
