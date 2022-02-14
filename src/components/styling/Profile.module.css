@@ -1,0 +1,60 @@
+.profileContainer{
+    width: 70%;
+    margin-left: 22%;
+}
+
+.profileTitle{
+    width: 100%;
+    text-align: center;
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    
+}
+
+.profileCard{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color:aqua;
+    padding: 10px;
+}
+
+.profileInfo{
+    width: 90%;
+    background-color: blueviolet;
+    border-radius: 7px;
+    box-shadow: 1px 1px 4px 3px #4b8bb3;
+    padding: .4rem;
+}
+
+.profileImg{
+    width: 30%;
+    border-radius: 50%;
+    margin: 15px auto;
+}
+.profileImg img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profileDetails{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.profileDetails span{
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.profileInterItems,
+.profileInterTotals{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}

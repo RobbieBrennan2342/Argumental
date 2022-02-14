@@ -8,6 +8,8 @@ const Categories = (props) => {
       <div className={classes.catsCard}>
         <div className={classes.catsTitle}>
           <span>Categories</span>
+          <br />
+          <span>(more coming soon...)</span>
         </div>
         <CategoryItem />
         <CategoryItem />

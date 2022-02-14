@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    // <Categories />
+    // <Profile />
     <Router>
       <Card>
         {auth ? <Navbar /> : <Login onAuth={handleAuth} />}
