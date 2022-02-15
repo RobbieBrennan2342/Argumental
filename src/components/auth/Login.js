@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaAngry } from "react-icons/fa";
 import { BsFacebook, BsTwitter, BsGoogle } from "react-icons/bs";
 import classes from "../styling/Login.module.css";
@@ -39,9 +40,11 @@ const Login = (props) => {
         </form>
       </div>
       <div className={classes.notRegistered}>
-        <button className={`${classes.socialBtn} ${classes.notRegBtn}`}>
-          Dont have an account? Click here!
-        </button>
+        <Link to="/register">
+          <button className={`${classes.socialBtn} ${classes.notRegBtn}`}>
+            Dont have an account? Click here!
+          </button>
+        </Link>
       </div>
     </div>
   );

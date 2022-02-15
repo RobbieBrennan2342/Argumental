@@ -22,9 +22,12 @@ function App() {
     // <Profile />
     <Router>
       <Card>
-        {auth ? <Navbar /> : <Login onAuth={handleAuth} />}
+        {/* {auth ? <Navbar /> : <Login onAuth={handleAuth} />} */}
         <Routes>
-          <Route path={!auth ? "/login" : "/"} exact element={<Home />}></Route>
+          <Route path="/" exact element={<Login />}></Route>
+        </Routes>
+        <Routes>
+          <Route path="/register" exact element={<Register />}></Route>
         </Routes>
         <Routes>
           <Route path="/post" exact element={<Post />}></Route>
@@ -39,7 +42,7 @@ function App() {
           <Route path="/favourites" exact element={<Favourites />}></Route>
         </Routes>
       </Card>
-      <Advert />
+      {/* <Advert /> */}
     </Router>
   );
 }
