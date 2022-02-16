@@ -1,50 +1,26 @@
 import React from "react";
-
+import UserPosts from "../post/UserPosts";
+import classes from "../styling/Home.module.css";
 import InfiniteScroll from "react-infinite-scroll-component";
+import { dummyData } from "../../test data/dummyData";
 
-const style = {
-  paddingTop: 2000,
-  border: "1px solid green",
-  margin: 6,
-  padding: 8,
-};
-
-class Home extends React.Component {
-  state = {
-    items: Array.from({ length: 20 }),
-  };
-
-  fetchMoreData = () => {
-    // a fake async api call like which sends
-    // 20 more records in 1.5 secs
-    setTimeout(() => {
-      this.setState({
-        items: this.state.items.concat(Array.from({ length: 20 })),
-      });
-    }, 1500);
-  };
-
-  render() {
-    return (
-      <div>
-        <h1>Cases</h1>
-        <hr />
+const Home = () => {
+  return (
+    <div className={classes.homeContainer}>
+      <h1>Cases</h1>
+      <div className={classes.homeContent}>
         <InfiniteScroll
-          dataLength={this.state.items.length}
-          next={this.fetchMoreData}
-          hasMore={true}
+          dataLength={dummyData.length}
+          hasMore={false}
           loader={<h4>Loading...</h4>}
         >
-          {this.state.items.map((i, index) => (
-            <div style={style} key={index}>
-              <h1>Title</h1>
-              <p>This is the content of the div</p>
-            </div>
+          {dummyData.map((posts) => (
+            <UserPosts key={posts.id} title={posts.title} body={posts.body} />
           ))}
         </InfiniteScroll>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Home;

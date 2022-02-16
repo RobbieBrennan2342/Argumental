@@ -16,7 +16,7 @@ const Navbar = () => {
             <h1>Argumental</h1>
           </div>
           <li>
-            <input type="search" placeholder="Search...🔍" />
+            <input type="search" placeholder="Search Posts...🔍" />
           </li>
           <li>
             <Link to="/home">

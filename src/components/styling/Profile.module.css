@@ -1,6 +1,7 @@
 .profileContainer{
     width: 70%;
     margin-left: 22%;
+    margin-top: 25px;
 }
 
 .profileTitle{
@@ -17,13 +18,12 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color:aqua;
     padding: 10px;
 }
 
 .profileInfo{
     width: 90%;
-    background-color: blueviolet;
+    background-color: #B9D7EA;
     border-radius: 7px;
     box-shadow: 1px 1px 4px 3px #4b8bb3;
     padding: .4rem;
@@ -33,6 +33,7 @@
     width: 30%;
     border-radius: 50%;
     margin: 15px auto;
+    box-shadow: -1px -10px 10px 0px rgba(0,0,0,0.42);
 }
 .profileImg img{
     width: 100%;
@@ -42,19 +43,67 @@
 .profileDetails{
     display: flex;
     flex-direction: column;
+    background-color: #769FCD;
+    padding: 8px;
+    color: #fff;
+    /* text-align: center; */
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.73);
     
 }
 
 .profileDetails span{
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
 }
-
-.profileInterItems,
-.profileInterTotals{
-    width: 20%;
+.profileInter{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
 }
+
+.profileEditBtn{
+    width: 10%;
+    padding: 4px;
+    margin-top: 4px;
+    border-radius: 4px;
+    background-color: #4b8bb3;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.profileInterItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    font-size: 1rem;
+}
+
+.profileInterIcon{
+    font-size: 30px;
+    background-color: #fff;
+    padding: 3px;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profileInterIcon:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.3s;
+}
+

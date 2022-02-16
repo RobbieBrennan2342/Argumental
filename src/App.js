@@ -19,10 +19,13 @@ function App() {
   };
 
   return (
-    // <Profile />
+    // <Home />
     <Router>
       <Card>
-        {/* {auth ? <Navbar /> : <Login onAuth={handleAuth} />} */}
+        <Navbar />
+        <Routes>
+          <Route path="/home" exact element={<Home />} />
+        </Routes>
         <Routes>
           <Route path="/" exact element={<Login />}></Route>
         </Routes>
@@ -42,7 +45,6 @@ function App() {
           <Route path="/favourites" exact element={<Favourites />}></Route>
         </Routes>
       </Card>
-      {/* <Advert /> */}
     </Router>
   );
 }

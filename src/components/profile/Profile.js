@@ -1,5 +1,8 @@
 import React from "react";
 import UserPosts from "../post/UserPosts";
+import { AiOutlineLike } from "react-icons/ai";
+import { MdPublic } from "react-icons/md";
+import { GiBookCover } from "react-icons/gi";
 import classes from "../styling/Profile.module.css";
 const Profile = (props) => {
   return (
@@ -18,16 +21,23 @@ const Profile = (props) => {
           <div className={classes.profileDetails}>
             <span>Name: Robbie Brennan</span>
             <span>Location: Ireland</span>
+            <span>Age: 33</span>
+            <button className={classes.profileEditBtn}>Edit</button>
           </div>
           <div className={classes.profileInter}>
             <div className={classes.profileInterItems}>
+              <AiOutlineLike className={classes.profileInterIcon} />
               <span>Likes</span>
-              <span>Posts</span>
-              <span>Followers</span>
-            </div>
-            <div className={classes.profileInterTotals}>
               <span>120</span>
+            </div>
+            <div className={classes.profileInterItems}>
+              <GiBookCover className={classes.profileInterIcon} />
+              <span>Posts</span>
               <span>12</span>
+            </div>
+            <div className={classes.profileInterItems}>
+              <MdPublic className={classes.profileInterIcon} />
+              <span>Followers</span>
               <span>1200</span>
             </div>
           </div>

@@ -1,4 +1,13 @@
-.home{
-    padding-top: 200px;
-    background-color: aliceblue;
+.homeContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContent{
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 50%;
 }

@@ -30,13 +30,15 @@ const Login = (props) => {
         <form className={classes.loginForm}>
           <input type="text" placeholder="Email" />
           <input type="password" placeholder="Password" />
-          <button
-            onClick={props.onAuth}
-            className={classes.loginBtn}
-            type="submit"
-          >
-            Login
-          </button>
+          <Link to="/home">
+            <button
+              onClick={props.onAuth}
+              className={classes.loginBtn}
+              type="submit"
+            >
+              Login
+            </button>
+          </Link>
         </form>
       </div>
       <div className={classes.notRegistered}>

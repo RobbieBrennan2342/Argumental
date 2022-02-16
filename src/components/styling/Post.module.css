@@ -81,7 +81,7 @@
     font-weight: bold;
     box-shadow: 1px 1px 4px 3px #4b8bb3;
     margin-top: 10px;
-
+    cursor: pointer;
 }
 
 .catSelect{
@@ -96,6 +96,52 @@
     color: #4b8bb3;
     transition: 0.4s;
 }
+
+
+/* User post item and card */
+
+
+.userPostsContainer{
+    margin-top: 10px;
+    padding: 10px;
+    width: 90%;
+    background-color: #4b8bb3;
+}
+
+.userPost{
+    background-color: #B9D7EA;
+    padding: 8px;
+    box-shadow: 1px 1px 4px 3px #000;
+    border-radius: 3px;
+}
+.userPost h3{
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: .1rem;
+    margin-bottom: 6px;
+}
+
+.userPost span{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+
+.postInterContainer{
+    display: flex;
+    width: 8%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.postInter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* User post item and card */
 
 
 @media screen and (max-width:821px) {
