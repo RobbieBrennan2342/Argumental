@@ -12,22 +12,22 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 
 function App() {
-  const [auth, setAuth] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const handleAuth = () => {
-    setAuth(!auth);
+  const handleNav = () => {
+    setIsLoggedIn(true);
   };
 
   return (
     // <Home />
     <Router>
+      {isLoggedIn ? <Navbar /> : null}
       <Card>
-        <Navbar />
         <Routes>
-          <Route path="/home" exact element={<Home />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
         <Routes>
-          <Route path="/" exact element={<Login />}></Route>
+          <Route path="/" exact element={<Login navAuth={handleNav} />}></Route>
         </Routes>
         <Routes>
           <Route path="/register" exact element={<Register />}></Route>
@@ -36,7 +36,7 @@ function App() {
           <Route path="/post" exact element={<Post />}></Route>
         </Routes>
         <Routes>
-          <Route path="/categories" rxact element={<Categories />}></Route>
+          <Route path="/categories" exact element={<Categories />}></Route>
         </Routes>
         <Routes>
           <Route path="/profile" exact element={<Profile />}></Route>

@@ -32,7 +32,7 @@ const Login = (props) => {
           <input type="password" placeholder="Password" />
           <Link to="/home">
             <button
-              onClick={props.onAuth}
+              onClick={props.navAuth}
               className={classes.loginBtn}
               type="submit"
             >
