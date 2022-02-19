@@ -5,14 +5,13 @@ import Home from "./components/content/Home";
 import Post from "./components/post/Post";
 import Categories from "./components/categories/Categories";
 import Profile from "./components/profile/Profile";
-import Favourites from "./components/content/Favourites";
+import Favourites from "./components/favourites/Favourites";
 import Card from "./components/UI/Card";
-import Advert from "./components/adverts/Advert";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   const handleNav = () => {
     setIsLoggedIn(true);
